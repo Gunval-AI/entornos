@@ -11,12 +11,20 @@ import com.ed.refactoring.Date;
 /**
  *
  * @author elena
+ * 
+ * Tests for the Date class.
  */
 public class DateTest {
 
     public DateTest() {
     }
     
+
+    /**
+     * Class for testing the isValid method.
+     */
+
+
         public class ValidDateTest {
     
             private Date correctDate = new Date(20, 6, 2008);
@@ -43,6 +51,11 @@ public class DateTest {
     
             private Date invalidLeapYearFebruaryDay2 = new Date(29, 2, 1900);
     
+            /**
+            *  Tests the isValid method.
+            */
+
+
             public void testIsValid() {
     
                 assertTrue(correctDate.isValid());

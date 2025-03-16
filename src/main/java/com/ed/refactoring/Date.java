@@ -7,17 +7,36 @@ package com.ed.refactoring;
  *
  * @author victor
  */
+
+
+ /**
+ * This class represents a date with day, month, and year.
+ */
 public class Date {
 
     private int day;
     private int month;
     private int year;
 
+/**
+     * Constructor for the Date class with the following parameters:
+     * @param day the day of the month
+     * @param month the month of the year
+     * @param year the year
+     */
+
+
     public Date(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
     }
+
+    /**
+     * Validates the date.
+     *
+     * @return boolean, true if valid, false if not
+     */
 
     public boolean isValid() {
         if (day < 1 || day > 31) {
