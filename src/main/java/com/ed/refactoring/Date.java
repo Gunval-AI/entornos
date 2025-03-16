@@ -5,7 +5,7 @@ package com.ed.refactoring;
 
 /**
  *
- * @author elena
+ * @author victor
  */
 public class Date {
 
